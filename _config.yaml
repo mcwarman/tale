@@ -1,14 +1,14 @@
 # Site settings
-title:          Tale
-description:    "Minimal Jekyll theme for storytellers"
+title:          Matthew Warman
+description:    "Technical Swiss Army Knife"
 baseurl:        "/blog"
-url:            "https://chesterhow.github.io"
+url:            "https://warman.io"
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name:         Matthew Warman
+  url:          https://warman.io
+  email:        mcwarman@gmail.com
 
 # Build settings
 markdown:       kramdown
