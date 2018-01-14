@@ -4,6 +4,7 @@
   width: 80%;
 }
 
+
 main,
 footer,
 .nav-container {
@@ -15,16 +16,25 @@ footer,
 .nav {
   box-shadow: 0 2px 2px -2px $shadow-color;
   overflow: auto;
+  background: url(../images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  &-overlay {
+    padding:1rem;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
 
   &-container {
-    margin: 1rem auto;
     position: relative;
     text-align: center;
   }
 
   &-title {
     @include transition(all .2s ease-out);
-    color: $default-color;
+    color: $nav-text-color;
     display: inline-block;
     margin: 0;
     padding-right: .2rem;
@@ -46,7 +56,7 @@ footer,
     @include transition(all .2s ease-out);
     color: $default-color;
     display: inline-block;
-    opacity: .6;
+    opacity: 1;
     padding: 0 2rem 0 0;
 
     &:last-child {
@@ -55,14 +65,23 @@ footer,
 
     &:hover,
     &:focus {
-      opacity: 1;
+      opacity: .6;
     }
   }
 
   a {
-    color: $default-color;
+    color: $nav-text-color;
     font-family: $sans-serif;
   }
+
+  $-avatar img {
+    height: 32px;
+    float:left;
+    border-radius: 100%;
+    border: 3px solid white;
+    margin-right:16px;
+  }
+
 }
 
 @media (min-width: 600px) {
