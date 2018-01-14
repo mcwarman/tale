@@ -74,12 +74,14 @@ footer,
     font-family: $sans-serif;
   }
 
-  $-avatar img {
-    height: 32px;
-    float:left;
-    border-radius: 100%;
-    border: 3px solid white;
-    margin-right:16px;
+  $-avatar {
+    img {
+      height: 32px;
+      float:left;
+      border-radius: 100%;
+      border: 3px solid white;
+      margin-right:16px;
+    }
   }
 
 }
