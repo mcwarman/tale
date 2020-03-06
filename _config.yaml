@@ -24,5 +24,5 @@ plugins:
   - jekyll-paginate
 
 # Permalinks
-permalink:      /:year/:month/:day/:title
+permalink:      /:year/:month/:day/:title.html
 paginate:       5
